@@ -84,7 +84,7 @@ server.get("/get/:id", async (request, response) => {
         response.status(500).send({ message: e.message });
     }
 });
-server.listen("3000", async () => {
+server.listen("5001", async () => {
     try {
         await client.connect();
         collection = client.db("searchDb").collection("user");
